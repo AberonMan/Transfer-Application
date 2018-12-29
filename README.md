@@ -5,6 +5,7 @@ Installation:
 2. cd Transfer-Application/
 3. gradlew shadowJar
 4. java -jar build/libs/transferServer.jar server 
+
 Please note, that only java 8 is supported
 4*. If you want to specify ports, please use:
 java -Ddw.server.applicationConnectors[0].port=9090 -Ddw.server.adminConnectors[0].port=9091 -jar build/libs/transferServer.jar server
@@ -16,7 +17,7 @@ Endpoints:
       ```json
     [{"id":1,"amount":"USD 100"},{"id":2,"amount":"USD 100"}]\
     ```
-2. POST: /account/create - create account in service, account in that server is just id and amount
+2. POST: /account/create - create account in service, for simplicity account is just id and amount
 
   Request example:
   ```json
