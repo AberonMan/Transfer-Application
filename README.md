@@ -13,12 +13,12 @@ Endpoints:
 1. Get: /accounts  - shaw all accounts in server
 2. POST: /account/create - create account in service, account in that server is just id and amount
 
-Request example:
-{
-"amount": 100
-}
+  Request example:
+  {
+   "amount": 100
+   }
 
-Response example:
-{
-  "id": 1
-}
+  Response example:
+  {
+    "id": 1
+  }
