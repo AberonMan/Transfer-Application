@@ -11,14 +11,33 @@ java -Ddw.server.applicationConnectors[0].port=9090 -Ddw.server.adminConnectors[
 
 Endpoints:
 1. Get: /accounts  - shaw all accounts in server
+
+    Response example:
+      ```json
+    [{"id":1,"amount":"USD 100"},{"id":2,"amount":"USD 100"}]\
+    ```
 2. POST: /account/create - create account in service, account in that server is just id and amount
 
   Request example:
+  ```json
   {
    "amount": 100
-   }
-
-  Response example:
+  }
+  ```
+    Response example:
+  ```json
   {
     "id": 1
   }
+  ```
+  3. POST: /transfer - transfer amount from one account to another
+  
+  Request example:
+  ```json
+  {
+    "from": 1,
+    "to": 2,
+    "amount":100
+  }
+  ```
+  where from, to - accounts id
