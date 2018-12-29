@@ -4,11 +4,8 @@ Installation:
 1. git clone https://github.com/AberonMan/Transfer-Application.git
 2. cd Transfer-Application/
 3. gradlew shadowJar
-4. java -jar build/libs/transferServer.jar server 
-
-Please note, that only java 8 is supported
-
-4*. If you want to specify ports, please use:
+4. java -jar build/libs/transferServer.jar server  (Please note, that only java 8 is supported)
+5. If you want to specify ports, please use:
 java -Ddw.server.applicationConnectors[0].port=9090 -Ddw.server.adminConnectors[0].port=9091 -jar build/libs/transferServer.jar server
 
 Endpoints:
