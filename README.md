@@ -15,6 +15,7 @@ Request example:
 {
 "amount": 100
 }
+
 Response example:
 {
   "id": 1
